@@ -9,40 +9,222 @@ $sub_menu_items: 3
     padding: 0
     margin: 0
     box-sizing: border-box
+h4
+    font-size: 16px
+    font-weight: bold
 
 html, body 
     margin: 0
     padding: 0
-#logo
-    height: 125px
-    text-align: center
+    font-size: 14px
 
+
+/*****PAGES****/
+nav
+    background-color: $lightPink !important
+    margin-top: -55px  
+#logo
+    width: 50%
+    float: left
+    position: absolute
+    top: 0
+    
+/****HOME PAGE ***/
+.home
+    nav
+        float: right
+        clear: both
+        background-color: #00004d
+        margin-top: 100px
+    #logo
+        float: right
+        width: 100%
+        img
+            float: right
+            width: 700px
+    #wrapper
+        margin-top: 270px
+        .card
+            border: none
+            text-align: left
+            padding-bottom: 50px  
+            background: none  
+            .card-body
+                padding: .2em
+                h4
+                    color: $darkBlue
+                    margin-left: 10px
+                    background-color: $lightPink
+                h5
+                    color: $black
+                    margin-left: 10px
+                    border-bottom: 1px $lightPink solid              
 .jumbotron
-    height: 550px
+    height: 630px
     padding: 0
     margin: 0 auto
-    position: relative
+    background-image: url("../images/background.jpg")
+    background-size: cover
+    // position: relative
     .lead
         position: relative
         top: 100px
         text-align: center
         
 .home-search
-    text-align: center
-    margin: 20px auto
     position: relative
-    top: 180px
-    .directory-search,
-    .suggested-search
-        text-align: center
-        display: block
-        margin-bottom: 50px
-        
-#wrapper
-    max-width: 1060px
-    margin: 20px auto
+    top: 270px
+    padding: 0
+    .input-group
+        background-color: $lightPink
+        border-radius: 5px
+        border: 1px $lightYellow solid
+        padding: 10px
+        .input-group-text
+            background-color: rgba(219, 182, 175, 0)
+            border: none
+            margin-right: 70px
+            font-weight: 500
+        .custom-select
+            margin-right: 30px
+            background: none
+            background-color: $lightGray
+            border-radius: 5px
+            border: 1px $lightYellow solid
+        .btn.btn-secondary
+            background-color: $lightGray
+            border-radius: 5px
+            border: 1px $lightYellow solid
+            height: 40px
+.suggested-search
+    position: relative
+    top: 310px
+    z-index: 299
+    background-color:  $lightPink
+    border: 1px $lightYellow solid
+    border-radius: 5px
+    color: $white
+    .input-group-text
+        background-color: rgba(219, 182, 175, 0)
+        border: none
+        margin-right: 70px
+        font-weight: 500
+    .suggest-right
+        padding: 15px  0 15px 80px
+        button
+            margin-right: 25px
+            margin-bottom: 30px
+            background-color: $lightGray
+            max-width: 135px
+            white-space: normal
+            padding: 5px 0 
+            max-height: 60px
+            border-radius: 5px
+            border: 1px $lightYellow solid
 
+
+#wrapper
+    margin: 20px auto
+    &.detail
+        img
+            width: 260px
+            float: right
+        .top-info
+            border-bottom: 1px solid $pink
+            padding-bottom: 10px
+            margin-left: 10px
+            h4
+                color: $darkBlue
+                background-color: $lightPink
+                display: inline-block
+                margin-top: 60px
+            h5
+                color: $black
+        .contactinfo
+            float: left
+        .hours
+            float: right
+            &.d-flex
+                ul
+                    margin-right: 30px
+                    li
+                        list-style: none
+                        &::before
+                            content: ""
+        .d-flex
+            ul
+                margin-right: 40px
+                li
+                    list-style: none
+                    &::before
+                        content: "- "
+    .highlight
+        border-bottom: 2px solid $pink
+        margin-top: 30px
+        padding-bottom: 5px
+        font-weight: normal
+        font-size: 18px
+    &.arttherapy
+        img
+            width: 260px      
+    ul
+        margin-right: 40px
+        li
+            list-style: none  
+            margin-right: 30px    
+    .row
+        margin-top: 12px
+        clear: both
+        width: 100%
+
+    &.contact
+        background-color: $lightYellow
+        padding: 10px 5px 50px 5px
+        .highlight
+            font-size: 24px
+            color: $darkBlue
+
+
+
+
+#footer
+    background-color: $darkBlue
+    color: $white
+    font-size: 14px
+    .top
+        background-color: $lightBlue
+        width: 100%
+        .logo
+            width: 40%
+            margin: 0 auto
+            background-color: none
+            padding: 10px
+    .container
+        max-width: 1480px
+        margin-top: 45px
+        margin-left: 60px
+
+        .contactus
+            display: block
+        .middle
+            margin: 10px 40px 20px 25px
+            h6
+                font-weight: bold
+                margin-left: 16px
+        .footer-text
+            line-height: 2
+            list-style-type: none
+            a
+                color: $white
+                list-style-type: none
+        a
+                color: $white
+                list-style-type: none
+#copyright
+    text-align: center
+    border-top: 1px solid $pink
+    padding: 10px
+        
 
     
-
 
